@@ -5,9 +5,25 @@
 
 // write your code here
 
-var names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
+function findLongNameThatStartsWithA(names){
+  // iterar elementos del array y encontrar nombres que empiecen por A
+  // for (let i = 0; i < names.length; i++) {
+  //   let element = names[i];
+  //   if(element.startsWith('A') && element.length > 7){
+  //     return element;
+  //   }
+  // }
+  // names.forEach(element => {
+    // if (element.startsWith('A') && element.length > 7){
+    //   // return element;
+    // }
+  // });
+  return names.find(element=>element.startsWith('A') && element.length > 7);
+}
 
-var longNameThatStartsWithA = findLongNameThatStartsWithA(names);
+let names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
+
+let longNameThatStartsWithA = findLongNameThatStartsWithA(names);
 
 console.log(longNameThatStartsWithA);
 

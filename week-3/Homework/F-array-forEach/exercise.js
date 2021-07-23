@@ -9,6 +9,32 @@
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
+arr.forEach(function(index) {
+  let multiCinco = false 
+  if (index % 5 == 0) {
+    multiCinco = true;
+  } 
+
+  let multiTres = false 
+  if (index % 3 == 0) {
+    multiTres = true;
+  }
+
+  if (multiCinco && multiTres) {
+    console.log("Fizzbuzz");
+  } else if (multiTres) {
+    console.log("Fizz");
+  } else if (multiCinco) {
+    console.log("Buzz");
+  } else {
+    console.log(index);
+  } 
+});
+
+
+
+
+
 /* EXPECTED OUTPUT */
 
 /*

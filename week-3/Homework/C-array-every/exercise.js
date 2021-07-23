@@ -3,9 +3,15 @@
 */
 
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
-var group = ["Austine", "Dany", "Swathi", "Daniel"];
+var group = ["Austine", "Dany", "Swathi", "Jose"];
 
-var groupIsOnlyStudents; // complete this statement
+var groupIsOnlyStudents = group.every(function(name) {
+  //quiero una funcion que busque si los elementos de "group pertenecen a "students"
+  return students.some(function (student) {
+    return name == student
+  })
+}); 
+// complete this statement
 
 if (groupIsOnlyStudents) {
   console.log("The group contains only students");

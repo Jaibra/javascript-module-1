@@ -6,11 +6,21 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-var name = "Daniel";
-var danielsRole = "mentor";
+// var name = "Daniel";
+// var danielsRole = "mentor";
 
+
+// if (danielsRole == "mentor") {
+//   console.log("Hi, I'm Daniel, I'm a mentor.");
+// } else {
+//   console.log("Hi, I'm Daniel, I'm a student.");
+// }
 /* 
 EXPECTED RESULT
 ---------------
 Hi, I'm Daniel, I'm a mentor.
 */
+let a = "5";
+let b=5;
+if (a == b) { console.log("son iguales");}
+if (a === b) { console.log("son iguales en tipo");}
